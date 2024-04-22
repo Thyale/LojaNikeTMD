@@ -1,0 +1,304 @@
+@media all {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(207, 207, 207);
+  }
+
+  /*transparente*/
+
+  .transparencia{
+    background-color: rgba(76, 76, 76, 0.658);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+  }
+
+  /*Barra lateral*/
+
+  .barraLateral{
+    background-color: rgb(196, 196, 196);
+    position: fixed;
+    width: 50%;
+    max-width: 300px;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+  }
+
+  .barraLateral img{
+    width: 100%;
+  }
+
+  .barraLateral_dados{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  /*header*/
+
+  header{
+    padding: 20px 10px;
+  }
+
+  .Menu span{
+    cursor: pointer;
+  }
+
+  .Pesquisa{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .Pesquisa div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Pesquisa input{
+    width: 90%;
+    border: none;
+    outline: none;
+  }
+
+  .Pesquisa input:focus{
+    border: none;
+    outline: none;
+  }
+
+  .Pesquisa span{
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.847);
+  }
+
+  /*main*/
+
+  main{
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .Msg{
+    color: rgb(155, 155, 155);
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+  }
+
+  .sectionDestaque{
+    padding: 20px 10px;
+  }
+
+  .TextoInicialEmDestaque{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .TextoInicialEmDestaque h1{
+    font-size: 25px;
+    color: rgb(37, 37, 37);
+  }
+
+  .TextoInicialEmDestaque p {
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.784);
+    font-size: 12px;
+  }
+
+  .DestaquesImgs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: scroll;
+  }
+
+  .DestaquesImgs::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  .DestaquesImgs_Sapatos{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .DestaquesImgs_Sapatos img{
+    width: 200px;
+  }
+
+  .descricaodaimg{
+    color: rgba(128, 128, 128, 0.778);
+    font-size: 14px;
+  }
+
+  .Adicionar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    margin-top: 10px;
+  }
+
+  .nomedosapato{
+    font-weight: bold;
+  }
+
+  .valor{
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  #iconADD{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 2px 10px 2px;
+    cursor: pointer;
+  }
+
+  /*Carrinho de compras*/
+
+  .Carrinho{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    display: none;
+  }
+
+  .Sapatos{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px; 
+    display: none;
+  }
+
+  .Sapatos_nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Sapatos_nome h1{
+    font-size: 20px;
+  }
+
+  .Sapatos_nome p{
+    color: gray;
+    font-size: 13px;
+  }
+
+  .Sapatos span{
+    cursor: pointer;
+  }
+
+  .Carrinho img{
+    width: 100px;
+  }
+
+  /*footer*/
+
+  footer{
+    width: 80%;
+    max-width:500px ;
+    margin: auto;
+    padding: 20px 10px;
+    border-top: 2px solid white;
+  }
+
+  .FooterDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .FooterDiv div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .FooterDiv_compra{
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .FooterDiv_compra p{
+    font-size: 15px;
+    display: none;
+  }
+
+  .FooterDiv_compra:hover p{
+    display: block;
+  }
+
+  .FooterDiv_carrinho{
+    cursor: pointer;
+  }
+
+  .FooterDiv_carrinho:hover{
+    background-color: white;
+  }
+
+  .FooterDiv_carrinho p{
+    font-size: 15px;
+    display: none;
+  }
+
+  .FooterDiv_carrinho:hover p{
+    display: block;
+  }
+
+}
